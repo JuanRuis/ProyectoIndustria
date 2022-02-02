@@ -1,0 +1,251 @@
+*{
+    margin: 30px;
+    padding: 10px;
+}
+.logo {
+    display: grid;
+    grid-template-columns: repeat(2, .2fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 18px;
+    grid-row-gap: px;
+    }
+
+    .logo img { 
+        grid-area: 1 / 1 / 2 / 2;
+        justify-self: flex-end; 
+    }
+    .logo h1 { 
+        grid-area: 1 / 2 / 2 / 3; 
+        color: whitesmoke;
+        font-size: 500%;
+    }
+
+body {
+    overflow-x: hidden;
+    background: rgb(22,18,84);
+    background: radial-gradient(circle, rgba(22,18,84,0.9668242296918768) 82%, rgba(0,155,255,1) 100%, rgba(2,213,230,1) 100%, rgba(184,185,221,1) 100%);
+}
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: stretch;
+    list-style: none;
+  }
+  
+    ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 170%;
+    }
+
+  .listaNav:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+  
+  .listaNav:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+  
+ .listaNav:nth-child(3) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+  
+  .listaNav:nth-child(4) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+  
+  .listaNav:nth-child(5) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+p {
+    color: whitesmoke;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.contUno{
+    position: relative;
+    text-align: left;
+    bottom: 100px;
+}
+.contUno p {
+    position: relative;
+    top: 70px;
+
+}
+.contUno img {
+    width: 500px;
+    float: left;
+    border-radius: 50px;
+}
+.contDos{
+    position: relative;
+    text-align:left;
+    bottom: 25px;
+}
+.contDos p {
+    position: relative;
+    top: 70px;
+}
+.contDos img {
+    position: relative;
+    width: 500px;
+    float: right;
+    border-radius: 50px;
+}
+.contTres {
+    position: relative;
+    text-align: left;
+    top: 75px;
+}
+.contTres p {
+    position: relative;
+    top: 50px;
+}
+.contTres img {
+    width: 500px;
+    float: left;
+    border-radius: 50px;
+    top: 300px;
+}
+footer {
+    position: relative;
+    top: 200px;
+    width: 100%;
+    height: 200px;
+    color: white;
+  }
+body footer ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: stretch;
+    list-style: none;
+}
+
+
+/* Index*/
+/* Mision*/
+
+.misionTitulo h2 {
+    position: relative;
+    bottom: 70px;
+}
+h2 {
+    color: whitesmoke;
+    font-size: 50px;
+}
+.misionGrafico {
+    position: relative;
+}
+.misionGrafico p {
+    position: relative;
+    top: 50px;
+}
+.misionGrafico img {
+    width: 350px;
+    border-radius: 50px;
+    float: left;
+}
+
+/* Mision*/
+/* Servicios*/
+
+.serviCuerpo {
+    display: grid;
+     grid-template-columns: repeat(4, .5fr);
+     grid-template-rows: repeat(3, .5fr);
+     grid-column-gap: 5px;
+     grid-row-gap: px;
+        }
+        .serviTitulo { grid-area: 1 / 1 / 2 / 5;
+        text-align: center;
+    }
+        .tablaPrecios { grid-area: 2 / 1 / 3 / 3;}
+        .serviTextoDos { grid-area: 3 / 1 / 4 / 3; }
+        .mapaUbi { grid-area: 2 / 3 / 4 / 5; }
+
+
+
+
+
+
+
+
+
+
+
+h3 {
+    color: whitesmoke;
+    font-size: 40px;
+}
+main table td {
+    color: whitesmoke;
+}
+main table tr {
+    color: whitesmoke;
+}
+/* Servicios*/
+/* Contacto*/
+
+main form {
+    width: 50px;
+    max-width: 400px;
+    border-radius: 10px;
+    margin: 30px;
+    display:list-item
+
+}
+
+
+main form label {
+    color: whitesmoke;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
