@@ -1,0 +1,24 @@
+$medidas: (
+    total: 100% ,
+    semitotal: 75% ,
+    mitad: 50% ,
+    cuarto: 25% ,
+    automatico: auto ,
+);
+
+%navupdown {
+    background-color: #48e;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: stretch;
+    list-style: none;
+}
+
+@mixin mediaQueryMobile {
+    @media only screen and (max-width: 500px) {
+        @content
+    }
+}

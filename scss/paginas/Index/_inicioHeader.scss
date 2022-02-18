@@ -1,0 +1,107 @@
+    .nav{
+        @extend %navupdown;
+ 
+        &__responsive-ul{
+            display: none;
+        }
+        &__li{
+            display: inline-block;
+            padding: 19px;
+            color: #fff;
+            font-size: 20px;
+            position: relative;
+            top: 20px;
+            border-width:thin;
+        }
+        &__li:hover > a {
+            color: #bbb;
+        }
+        &__li:hover > {
+            color: #bbb;
+        }
+        &__li a{
+            border-width: 0ex;
+            color: black;
+            text-decoration: none;
+            border-radius: 10px;
+            border-style: inset;
+            border-color: black;
+            border-right-width: 1px;
+            border-left-width: 1px;
+            border-bottom-width: 1px;
+            border-top-width: 1px;
+            background-color: white;
+            
+        }
+        &__li i{
+            width: 30px;
+            box-sizing: border-box;
+            text-align: right;
+            margin-right: 5px; 
+        }
+        &__responsive-button-container {
+            position: absolute;
+            width: map-get($medidas, total);
+            font-size: 25px;
+            background-color: #69c;
+            margin-top: -64px;
+            z-index: 100;
+        }
+        &__responsive-button {
+            padding: 6px 20px;
+            text-align: right;
+        }
+    }
+        @include mediaQueryMobile{
+
+            .nav{
+                height: 37px;
+                width: map-get($medidas, total);
+                height: map-get($medidas, total);
+    
+    
+                &__ul {
+                    display: none;
+                }
+                &__responsive-ul{
+                    height: 20px;
+                    display: block;
+                    position: absolute;
+                    width: map-get($medidas, total);
+                    margin-top: 37px;
+                    padding-top: 27px;
+    
+                    &:hover > .nav__li-container{
+                        top: -27px;
+                    }
+                }
+                &__li-container{
+                    position: relative;
+                    top: -250px;
+                    background-color: #9bf;
+                    transition: all 1s;
+                    z-index: 1;    
+                }
+                &__responsive-li{
+                    width: map-get($medidas, total);
+                    padding: 9px 20px; 
+    
+                    i{
+                        box-sizing: border-box;
+                        text-align: center;
+                        margin-right: 5px;
+                        width: 30px;
+                        color: #016;    
+                    }
+                    a{
+                        color: #016;
+                        text-decoration: none; 
+                    }
+                }
+            }
+
+
+        }
+
+ 
+    

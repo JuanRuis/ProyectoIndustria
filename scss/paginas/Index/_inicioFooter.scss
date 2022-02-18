@@ -1,0 +1,18 @@
+footer {
+   @extend %navupdown;
+
+    li {
+        display: inline-flex;
+        padding: 19px;
+        color: #fff;
+        font-size: 20px;
+        position: relative;
+        border-width: thin; }
+        align-content: center;
+
+        a{
+            border-width: 0ex;
+            color: black;
+            text-decoration: none;
+        }
+}
