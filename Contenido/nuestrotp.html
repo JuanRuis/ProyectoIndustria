@@ -5,35 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Pagina</title>
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <script src="https://kit.fontawesome.com/d1f308bc85.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital@1&family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Mi Pagina</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html" class="listaNav">Inicio</a></li>
-                <li><a href="../Contenido/nuestrotp.html" class="listaNav">Nuestro Trabajo</a></li>
-                <li><a href="../Contenido/mision.html" class="listaNav">Misión</a></li>
-                <li><a href="../Contenido/servicios.html" class="listaNav">Servicios</a></li>
-                <li><a href="../Contenido/contacto.html" class="listaNav">Contacto</a></li>
+        <div class="logo">
+            <img class= "logo__img" src="/imagenes/logo.jpg" alt="logo">
+        </div>
+        <nav class="nav"> 
+            <ul class="nav__ul">
+                <li class="nav__li"></i><a href="../index.html" class="nav__li">INICIO</a></li>
+                <li class="nav__li"></i><a href="../Contenido/nuestrotp.html" class="nav__li">NUESTRO TRABAJO</a></li>
+                <li class="nav__li"></i><a href="../Contenido/mision.html" class="nav__li">MISIÓN</a></li>
+                <li class="nav__li"></i><a href="../Contenido/servicios.html" class="nav__li">SERVICIOS</a></li>
+                <li class="nav__li"></i><a href="../Contenido/contacto.html" class="nav__li">CONTACTO</a></li>
             </ul>
+            <ul class="nav__responsive-ul">
+              <div class="nav__responsive-button-container">
+                 <div class="nav__responsive-button"><i class="fa-solid fa-bars"></i> </div>
+                 </div>
+                 <div class="nav__li-container">
+                   <li class="nav__responsive-li"><i class="fas fa-home"></i><a href="../ProyectoIndustria/index.html">INICIO</a></li>
+                   <li class="nav__responsive-li"><i class="fa-solid fa-screwdriver-wrench"></i></i><a href="../ProyectoIndustria/Contenido/nuestrotp.html">NUESTRO TRABAJO</a></li>
+                   <li class="nav__responsive-li"><i class="fas fa-magnifying-glass"></i><a href="../ProyectoIndustria/Contenido/mision.html">MISIÓN</a></li>
+                   <li class="nav__responsive-li"><i class="fas fa-briefcase"></i><a href="../ProyectoIndustria/Contenido/servicios.html">SERVICIOS</a></li>
+                   <li class="nav__responsive-li"><i class="fas fa-user-friends"></i><a href="../ProyectoIndustria/Contenido/contacto.html">CONTACTO</a></li>
+              </div>
+              </ul>
         </nav>
     </header> 
-    <main>
-        <div>
-        <h2>Nuestro Trabajo</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt sequi, quam veniam eveniet doloribus qui unde exercitationem, pariatur molestias, accusantium voluptatem ratione fugit nemo ad possimus explicabo culpa excepturi in!</p>
-        <img src="" alt="Imagen descriptiva">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque, aliquam error fuga voluptatum cumque doloribus doloremque voluptates odit id quod dignissimos blanditiis dolorem dolores repellat totam cupiditate aliquid quam rem.</p>
-        <img src="" alt="Imagen descriptivados">
-    </div>
-    <div>
-        <h3>Empresas que trabajan con nosotros</h3>
-        <img src="" alt="logo amazon">
-        <img src="" alt="logo apple">
-        <img src="" alt="logo paypal">
-    </div>
+    <main class="mainNuestrotp">
+        <section class="mainNuestrotp__content">
+            <div class="mainNuestrotp__content-div">
+                <h2>Nuestro Trabajo</h2>
+                <p>En Metalúrgica Seijas entendemos que la relación con nuestros clientes no termina con la venta, sino que es allí donde recién comienza, es por eso que buscamos establecer relaciones duraderas y de valor con los mismos generando una retroalimentación, la cual es muy importante ya que nos brinda la posibilidad de desarrollar y mejorar la calidad de nuestros productos y servicios, permitiéndonos superar las expectativas de nuestros clientes.Con respeto al capital humano con el que contamos, buscamos generar un ambiente laboral, ameno, de respeto y colaboración que les permita el desarrollo personal.</p>
+            </div>
+            <div class="mainNuestrotp__content-div">
+                <img src="/imagenes/capitalhumano.jpg" alt="Imagen descriptiva">
+            </div>
+            <div class="mainNuestrotp__content-div">
+                <p>También es importante para la empresa tener proveedores de primera línea que nos proporcionen insumos y servicios de calidad, en un tiempo acotado y a precios razonables, es por eso que estamos en constante comunicación con los mismos, para así poder brindarle a nuestros clientes mejores productos y servicio.Asumimos una actitud de respeto, responsabilidad, honestidad y humildad, creando un ambiente de confianza y compromiso, tanto con las personas como con los objetivos empresariales, cumpliendo con todas nuestras responsabilidades.</p>
+            </div>
+            <div class="mainNuestrotp__content-div">
+                <img src="/imagenes/deal.jpg" alt="Imagen descriptivados">
+            </div>
+            <div class="mainNuestrotp__content-div">
+                <h3>Empresas que trabajan con nosotros</h3>
+                <div class="inversores">
+                    <i class="fa-brands fa-amazon fa-3x"></i>
+                    <i class="fa-brands fa-apple fa-3x"></i>
+                    <i class="fa-brands fa-paypal fa-3x"></i>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <ul>

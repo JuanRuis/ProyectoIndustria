@@ -5,49 +5,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Pagina</title>
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <script src="https://kit.fontawesome.com/d1f308bc85.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital@1&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 <body>
     <header>
-        <h1>Mi Pagina</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html" class="listaNav">Inicio</a></li>
-                <li><a href="../Contenido/nuestrotp.html" class="listaNav">Nuestro Trabajo</a></li>
-                <li><a href="../Contenido/mision.html" class="listaNav">Misión</a></li>
-                <li><a href="../Contenido/servicios.html" class="listaNav">Servicios</a></li>
-                <li><a href="../Contenido/contacto.html" class="listaNav">Contacto</a></li>
+        <div class="logo">
+            <img class= "logo__img" src="/imagenes/logo.jpg" alt="logo">
+        </div>
+        <nav class="nav"> 
+            <ul class="nav__ul">
+                <li class="nav__li"></i><a href="../index.html" class="nav__li">INICIO</a></li>
+                <li class="nav__li"></i><a href="../Contenido/nuestrotp.html" class="nav__li">NUESTRO TRABAJO</a></li>
+                <li class="nav__li"></i><a href="../Contenido/mision.html" class="nav__li">MISIÓN</a></li>
+                <li class="nav__li"></i><a href="../Contenido/servicios.html" class="nav__li">SERVICIOS</a></li>
+                <li class="nav__li"></i><a href="../Contenido/contacto.html" class="nav__li">CONTACTO</a></li>
             </ul>
+            <ul class="nav__responsive-ul">
+              <div class="nav__responsive-button-container">
+                 <div class="nav__responsive-button"><i class="fa-solid fa-bars"></i> </div>
+                 </div>
+                 <div class="nav__li-container">
+                   <li class="nav__responsive-li"><i class="fas fa-home"></i><a href="../ProyectoIndustria/index.html">INICIO</a></li>
+                   <li class="nav__responsive-li"><i class="fa-solid fa-screwdriver-wrench"></i></i><a href="../ProyectoIndustria/Contenido/nuestrotp.html">NUESTRO TRABAJO</a></li>
+                   <li class="nav__responsive-li"><i class="fas fa-magnifying-glass"></i><a href="../ProyectoIndustria/Contenido/mision.html">MISIÓN</a></li>
+                   <li class="nav__responsive-li"><i class="fas fa-briefcase"></i><a href="../ProyectoIndustria/Contenido/servicios.html">SERVICIOS</a></li>
+                   <li class="nav__responsive-li"><i class="fas fa-user-friends"></i><a href="../ProyectoIndustria/Contenido/contacto.html">CONTACTO</a></li>
+              </div>
+              </ul>
         </nav>
     </header>
-    <main>
-        <div>
-        <h2>¿Quienes somos?</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus aut, corrupti repudiandae illo magnam maiores ducimus placeat dolore? Sapiente nihil obcaecati numquam ratione voluptatem at ex itaque aperiam dicta accusamus?</p>
+    <main class="mainContacto">
+        <div class="mainContacto__texto">
+            <h2 class="mainContacto__texto-div" >¿Quienes somos?</h2>
         </div>
-        <h3>Contactanos</h3>
-        <form class="formulario">
-            <div>
-                <label>Nombre:</label>
-                <input type="text">
+        <div class="mainContacto__texto-div">
+            <p>Si aun tenes dudas con respecto a la empresa y/o trabajo que realizamos, te invito a que completes el siguiente formulario de contacto para poder asistirte en lo que necesites.</p>
+        </div>
+        <div class="content">
+            <div class="contact-wrapper">
+                <div class="contact-form">
+                    <form action="">
+                        <p>
+                            <label>Fullname</label>
+                            <input type="text" name="fullname">
+                        </p>
+                        <p>
+                            <label>Email Address</label>
+                            <input type="email" name="email">
+                        </p>
+                        <p>
+                            <label>Phone</label>
+                            <input type="tel" name="phone">
+                        </p>
+                        <p>
+                            <label>Affair</label>
+                            <input type="text" name="affair">
+                        </p>
+                        <p class="block">
+                            <label>Message</label>
+                            <textarea name="message" rows="3"></textarea>
+                        </p>
+                        <p class="block">
+                            <button type="submit">
+                                Send
+                            </button>
+                        </p>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <ul>
+                        <li><i class="fa-solid fa-phone"></i> 1111 1111 1111</li>
+                        <li><i class="fa-solid fa-at"></i>metalurgia@gmail.com</li>
+                    </ul>
+                    <p>Nuestro numero telefonico esta disponible las 24hs de Lunes a Viernes.</p>
+                    <p>
+                        Agradecemos tu interes en querer saber mas sobre nosotros!
+                    </p>
+                </div> 
+
             </div>
-            <div>
-                <label>Apellido:</label>
-                <input type="text">
-            </div>
-            <div>
-                <label>Correo:</label> 
-                <input type="email" required> 
-            </div>
-            <div>
-                <label>Mensaje</label>
-                <textarea></textarea>
-            </div>
-            <input type="submit">
-        </form>
-        <div>
-            <img src="" alt="foto ilustrativa">
-            <img src="" alt="foto ilustrativados">
         </div>
     </main>
     <footer>

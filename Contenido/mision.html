@@ -5,40 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Pagina</title>
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <script src="https://kit.fontawesome.com/d1f308bc85.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital@1&family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Mi Pagina</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html" class="listaNav">Inicio</a></li>
-                <li><a href="../Contenido/nuestrotp.html" class="listaNav">Nuestro Trabajo</a></li>
-                <li><a href="../Contenido/mision.html" class="listaNav">Misión</a></li>
-                <li><a href="../Contenido/servicios.html" class="listaNav">Servicios</a></li>
-                <li><a href="../Contenido/contacto.html" class="listaNav">Contacto</a></li>
+        <div class="logo">
+            <img class= "logo__img" src="/imagenes/logo.jpg" alt="logo">
+        </div>
+        <nav class="nav"> 
+            <ul class="nav__ul">
+                <li class="nav__li"></i><a href="../index.html" class="nav__li">INICIO</a></li>
+                <li class="nav__li"></i><a href="../Contenido/nuestrotp.html" class="nav__li">NUESTRO TRABAJO</a></li>
+                <li class="nav__li"></i><a href="../Contenido/mision.html" class="nav__li">MISIÓN</a></li>
+                <li class="nav__li"></i><a href="../Contenido/servicios.html" class="nav__li">SERVICIOS</a></li>
+                <li class="nav__li"></i><a href="../Contenido/contacto.html" class="nav__li">CONTACTO</a></li>
             </ul>
+            <ul class="nav__responsive-ul">
+              <div class="nav__responsive-button-container">
+                 <div class="nav__responsive-button"><i class="fa-solid fa-bars"></i> </div>
+                 </div>
+                 <div class="nav__li-container">
+                   <li class="nav__responsive-li"><i class="fas fa-home"></i><a href="../ProyectoIndustria/index.html">INICIO</a></li>
+                   <li class="nav__responsive-li"><i class="fa-solid fa-screwdriver-wrench"></i></i><a href="../ProyectoIndustria/Contenido/nuestrotp.html">NUESTRO TRABAJO</a></li>
+                   <li class="nav__responsive-li"><i class="fas fa-magnifying-glass"></i><a href="../ProyectoIndustria/Contenido/mision.html">MISIÓN</a></li>
+                   <li class="nav__responsive-li"><i class="fas fa-briefcase"></i><a href="../ProyectoIndustria/Contenido/servicios.html">SERVICIOS</a></li>
+                   <li class="nav__responsive-li"><i class="fas fa-user-friends"></i><a href="../ProyectoIndustria/Contenido/contacto.html">CONTACTO</a></li>
+              </div>
+              </ul>
         </nav>
     </header>
-    <main>
-        <div class="misionTitulo">
-         <h2>Objetivo</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo cumque modi magnam quod eaque debitis cum, fugit quisquam qui! Neque corrupti culpa consequuntur ad dicta a aliquam natus eaque voluptatem.</p>
-        </div>
-          <div>
-            <iframe width="600px" height="500px" src="https://www.youtube.com/embed/uruUfi7OEAk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>"
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In odit libero minus deserunt labore necessitatibus illo exercitationem tempore similique quae, assumenda fuga? Praesentium odit consectetur excepturi cum expedita quos. Est.</p>
-        </div>
-        <div class="misionGrafico">
-            <img src="../imagenes/graficostat.jpg" alt="grafico ilustrativo">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, nam adipisci consequuntur dolores sed illo possimus sapiente dolor mollitia, ad distinctio quam rerum cumque voluptatem doloribus veniam necessitatibus dicta tempora.</p>           
-         </div>
+    <main class="mainMision">
+        <section class="mainMision__content">
+            <div class="mainMision__content-div">
+                <h2>Objetivo</h2>
+               <p>Nuestra misión es satisfacer eficientemente las necesidades de nuestros clientes; otorgando una excelente calidad en nuestros productos mediante la interrelación con proveedores adecuados, eligiéndolos minuciosamente. Siendo responsables, ya sea con el medio ambiente como con todas las personas que pertenecen a nuestra empresa, brindándoles las mejores condiciones laborales; utilizando como herramienta/objetivo inamovible el mejoramiento continuo.</p>
+               </div>
+               <div class="mainMision__content-div">
+                <iframe width="500px" height="300px" src="https://www.youtube.com/embed/uruUfi7OEAk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               </div>
+                 <div class="mainMision__content-div">
+                   <p>La visión de nuestra empresa es obtener una posición sólida, tanto en el mercado nacional como internacional, posicionándonos como el número uno en ventas de productos de cocción, obteniendo así los mejores beneficios.</p>
+               </div>
+               <div class="mainMision__content-div">
+                    <img src="../imagenes/graficostat.jpg" alt="grafico ilustrativo">
+               </div>
+               <div class="mainMision__content-div">
+                   <p>Actualmente nos encontramos en constante crecimiento demostrando que nuestro servicio apunta siempre a mejorar y brindar el maximo de nuestra capacidad para satisfacer las necesidades de los clientes. Nos caracterizamos por demostrar una notoria diferencia entre nuestros competidores.  </p>           
+                </div>
+        </section>
         </main>    
     <footer>
         <ul>
-            <li><a href="../Contenido/servicios.html" target="_blank">Ubicacion</a></li>
-            <li><a href="../Contenido/nuestrotp.html" target="_blank">Nuestro Trabajo</a></li>
-            <li><a href="../Contenido/contacto.html" target="_blank">Contacto</a></li>
+            <li><a href="../Contenido/servicios.html" target="_blank">UBICACION</a></li>
+            <li><a href="../Contenido/nuestrotp.html" target="_blank">NUESTRO TRABAJO</a></li>
+            <li><a href="../Contenido/contacto.html" target="_blank">CONTACTO</a></li>
         </ul>
     </footer>   
 </body> 
